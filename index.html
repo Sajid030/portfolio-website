@@ -39,6 +39,7 @@
   <link href="css/agency.css" rel="stylesheet">
   <!-- Leaflet -->
   <link rel="stylesheet" href="leaflet-1.7.1/dist/style.css"/>
+  <link rel="stylesheet" href="./css/styles.css"/>
   <script src="leaflet-1.7.1/dist/leaflet.js"></script>
 </head>
 <body id="page-top">
@@ -244,17 +245,15 @@
   <!-- Add white space on the side to have the good size: convert -size 380x445 xc:white new.png  -gravity center -composite output.png -->
   <!-- Or adapt to add height on top / bottom -->
   <style>
-    .card {
-      margin-right: 50px;
-    }
+    
     .card-title{
-      text-align: center;
+      text-align: left;
       font-family: Georgia, 'Times New Roman', Times, serif;
       font-weight: bold;
       color:#69b3a2;
     }
     .card-text{
-      font-size: 15px;
+      font-size: 0.9em;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
   </style>
@@ -275,8 +274,8 @@
         </div>
       </div>
       <br><br>
-      <div id="portfolio-items" class="row">
-        <div class="card col-md-3 col-sm-6 bg-light portfolio-item show column machine" style="width: 18rem;">
+ <div id="portfolio-items" class="portfolio_items row row-cols-1 row-cols-md-4 g-2">
+        <div  class="card    bg-light portfolio-item show column machine" >
           <img class="card-img-top" src="img/portfolio/carprice.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Car Price Prediction</h5>
@@ -284,7 +283,7 @@
             <a href="https://github.com/Sajid030/car_price_prediction" target="_blank" class="btn btn-primary">Code</a>
           </div>
         </div>
-        <div class="card col-md-3 col-sm-6 portfolio-item show column machine" style="width: 18rem;">
+        <div class="card  portfolio-item show column machine" >
           <img class="card-img-top" src="img/portfolio/frauddetect.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Fraud Detection</h5>
@@ -292,7 +291,7 @@
             <a href="https://github.com/Sajid030/fraud_detection" target="_blank" class="btn btn-primary">Code</a>
           </div>
         </div>
-        <div class="card col-md-3 col-sm-6 bg-light portfolio-item show column nlp" style="width: 18rem;">
+        <div class="card  bg-light portfolio-item show column nlp" >
           <img class="card-img-top" src="img/portfolio/tweeting.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Tweet-Sentiment Analysis</h5>
@@ -300,7 +299,7 @@
             <a href="https://github.com/Sajid030/tweet-sentiment-analysis" target="_blank" class="btn btn-primary">Code</a>
           </div>
         </div>
-        <div class="card col-md-3 col-sm-6 portfolio-item show column deep" style="width: 18rem;">
+        <div class="card  portfolio-item show column deep" >
           <img class="card-img-top" src="img/portfolio/lendingclub.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Lending-Club Loan Prediction</h5>
